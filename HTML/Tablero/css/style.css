@@ -1,0 +1,38 @@
+body {
+  font-family: arial, serif;
+}
+
+table, th, td {
+  border-bottom: 1px solid #bbbbbb;
+  border-collapse: collapse;
+}
+
+th {
+  color: #bbbbbb;
+  border-top: 1px solid #bbbbbb;
+}
+
+th, td {
+  padding: 10px;
+  align-content: center;
+}
+
+i {
+  font-size: 25px;
+}
+
+.fa-circle-check {
+  color: #1da223;
+}
+
+.fa-circle-xmark {
+  color: #e52019;
+}
+
+.fa-circle-minus {
+  color: #bbbbbb;
+}
+
+.club {
+  width: 300px;
+}
