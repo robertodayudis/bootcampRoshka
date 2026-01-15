@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TaTeTi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2>TaTeTi</h2>
+  <div class="container">
+    <form id="setupForm" class="formulario">
+      <fieldset>
+        <label class="titulo" for="jugUno">Nombre jugador 1:</label>
+        <input type="text" class="inputNombre" id="jugUno" name="jugUno">
+        <div id="jugDosWrap">
+          <label class="titulo" for="jugDos">Nombre jugador 2:</label>
+          <input type="text" class="inputNombre" id="jugDos" name="jugDos">
+        </div>
+      </fieldset>
+      <fieldset>
+        <label class="titulo">Elija modo de Juego</label>
+        <div class="segmented">
+          <input type="radio" id="modeH" name="mode" value="hvh" checked>
+          <label for="modeH">vs Humano</label>
+
+          <input type="radio" id="modeC" name="mode" value="hvc">
+          <label for="modeC">vs Computadora</label>
+        </div>
+
+        <label class="titulo">Quien empieza con X?</label>
+        <div class="segmented">
+          <input type="radio" id="jugUx" name="jugX" value="jugUx" checked>
+          <label for="jugUx">Jugador 1</label>
+
+          <input type="radio" id="jugDx" name="jugX" value="jugDx">
+          <label for="jugDx">Jugador 2</label>
+        </div>
+      </fieldset>
+      <input type="submit" value="Iniciar" class="btn">
+      <div class="status">
+        Estado
+      </div>
+    </form>
+
+
+
+    <div class="tablero">
+      <table>
+        <thead>
+
+        </thead>
+        <tbody>
+          <tr>
+            <td data-cell="0"></td>
+            <td data-cell="1"></td>
+            <td data-cell="2"></td>
+          </tr>
+          <tr>
+            <td data-cell="3"></td>
+            <td data-cell="4"></td>
+            <td data-cell="5"></td>
+          </tr>
+          <tr>
+            <td data-cell="6"></td>
+            <td data-cell="7"></td>
+            <td data-cell="8"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <input type="button" id="resetGame" value="Reiniciar" class="btn">
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
