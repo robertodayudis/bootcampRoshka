@@ -1,0 +1,1135 @@
+{
+  "info": {
+    "_postman_id": "f6f60634-398b-4e9e-9228-45fd561d4944",
+    "name": "Editorial Springboot Local",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39182689"
+  },
+  "item": [
+    {
+      "name": "Aula",
+      "item": [
+        {
+          "name": "Aula - List",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/aulas",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "aulas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Aula - Get id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/aulas/1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "aulas",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Aula - Create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\" : \"Aula A4\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/aulas",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "aulas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Aula - Update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Aula A2\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/aulas/2",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "aulas",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Aula - Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/aulas/3",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "aulas",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Editorial",
+      "item": [
+        {
+          "name": "Editorial - List",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Planeta (Editado)\"\r\n}\r\n"
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/editoriales",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "editoriales"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Editorial - Get id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/editoriales/2",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "editoriales",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Editorial - Create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\" : \"Biologia Marina\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/editoriales",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "editoriales"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Editorial - Update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\" : \"Comunicacion editado\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/editoriales/10",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "editoriales",
+                "10"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Editorial - Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/editoriales/11",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "editoriales",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Asignatura",
+      "item": [
+        {
+          "name": "Asignatura - List",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/asignaturas",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "asignaturas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Asignatura - Get id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/asignaturas/1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "asignaturas",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Asignatura - Create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\":\"Filosifia\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/asignaturas",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "asignaturas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Asignatura - Update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\":\"Filosofia\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/asignaturas/5",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "asignaturas",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Asignatura - Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/asignaturas/5",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "asignaturas",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Colegio",
+      "item": [
+        {
+          "name": "Colegio - List",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\":\"Filosifia\"\r\n}"
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/colegios",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "colegios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Colegio - Get id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/colegios/1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "colegios",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Colegio - Create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\":\"Colegio La Esperanza\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/colegios",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "colegios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Colegio - Update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\":\"Colegio Las Mercedes\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/colegios/1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "colegios",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Colegio - Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/colegios/3",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "colegios",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Libro",
+      "item": [
+        {
+          "name": "Libro - List",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/libros",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "libros"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Libro - Get id",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Clean Code 2nd Edition\",\r\n  \"editorialId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/libros/1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "libros",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Libro - Create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Matematica Aplicada a la Mecanica\",\r\n  \"editorialId\": 3\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/libros",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "libros"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Libro - Editar",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Clean Code Methods\",\r\n  \"editorialId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/libros/1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "libros",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Libro - Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/libros/3",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "libros",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "ColProfe",
+      "item": [
+        {
+          "name": "ColProfe - Get colegioId",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/colprofes?colegioId=1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "colprofes"
+              ],
+              "query": [
+                {
+                  "key": "colegioId",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ColProfe - Get profesorId",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/colprofes?profesorId=1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "colprofes"
+              ],
+              "query": [
+                {
+                  "key": "profesorId",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ColProfe - List",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/colprofes",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "colprofes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ColProfe - Create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"colegioId\": 3,\r\n    \"profesorId\": 3\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/colprofes",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "colprofes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ColProfe - Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/colprofes/3",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "colprofes",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "PrestamoLibro",
+      "item": [
+        {
+          "name": "PrestamoLibro - Get id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/prestamos/10",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "prestamos",
+                "10"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PrestamoLibro - List",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/prestamos",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "prestamos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PrestamoLibro - Create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"colProfeId\": 1,\r\n  \"asignaturaId\": 1,\r\n  \"aulaId\": 1,\r\n  \"cursoId\": 1,\r\n  \"fechaPrestamo\": \"2026-01-23\",\r\n  \"librosIds\": [1, 2]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/prestamos",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "prestamos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PrestamoLibro - Update",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"colProfeId\": 1,\r\n  \"asignaturaId\": 1,\r\n  \"aulaId\": 2,\r\n  \"cursoId\": 1,\r\n  \"fechaPrestamo\": \"2026-01-24\",\r\n  \"librosIds\": [2, 3]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/prestamos/10",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "prestamos",
+                "10"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PrestamoLibro - Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/prestamos/10",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "prestamos",
+                "10"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Curso",
+      "item": [
+        {
+          "name": "Curso - List",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/cursos",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "cursos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Curso - Get id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/cursos/1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "cursos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Curso - Create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\" : \"3er Grado\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/cursos",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "cursos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Curso - Update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"2do Grado\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/cursos/2",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "cursos",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Curso - Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/cursos/3",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "cursos",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Profesor",
+      "item": [
+        {
+          "name": "Profesor - Get id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/profesores/1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "profesores",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Profesor - List",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/cursos/1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "cursos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Profesor - Create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombre\" : \"3er Grado\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/cursos",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "cursos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Profesor - Update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"2do Grado\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/api/cursos/2",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "cursos",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Profesor - Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/api/cursos/3",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "api",
+                "cursos",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseURL",
+      "value": ""
+    }
+  ]
+}
